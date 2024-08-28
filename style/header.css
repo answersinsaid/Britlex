@@ -1,0 +1,141 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 115px;
+}
+.header__logo{
+    color: #000000;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 54px;
+    text-align: left;
+    
+}
+.header__logo-span{
+    color: #939393;
+}
+.header__nav{
+}
+.header__list{
+    display: flex;
+    gap: 20px;
+}
+.header__item{}
+.header__link{
+    color: rgb(38, 50, 56);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+    align-items: center;
+    
+}
+.header__button{
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid rgb(38, 50, 56);
+    border-radius: 5px;
+    padding: 17px 57px;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    background-color: transparent;
+    transition-property: color,background-color;
+    transform: all 0.3s ease 0s;
+}
+.header__button:hover{
+    background-color: #263238;
+    color: #ffffff;
+}
+.header__burger-button{
+    display: none;
+}
+
+  @media screen and (max-width: 993px) {
+    .header{
+        padding-top: 30px;
+    }
+    .header__logo{
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .header__link{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .header__button{
+        padding: 12px 40px;
+        font-size: 18px;
+        line-height: 27px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .header{
+        padding-top: 40px;
+    }
+
+    .header__list{
+      display: none;
+    }
+  
+    .header__button {
+      display: none;
+    }
+  
+    .header__burger-button {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      background-color: transparent;
+      border: none;
+    }
+  
+    .header__burger-button span::after {
+      content: "";
+      display: block;
+      width: 30px;
+      height: 4px;
+      background: rgb(57, 81, 94);
+      border-radius: 2px;
+    }
+  
+    .header span:last-child:after {
+      width: 20px;
+    }
+}
+  
+  @media screen and (max-width: 576px) {
+
+    .header__burger-button span::after {
+    width: 40px;
+    height: 4px;
+  }
+
+  .header span:last-child:after {
+    width: 30px;
+  }
+}
+  
+  @media screen and (max-width: 321px) {
+    .header{
+        padding-top: 35px;
+    }
+    .header__logo{
+    font-size: 24px;
+    line-height: 36px;
+    }
+
+   .header__burger-button span::after {
+    width: 33px;
+    height: 4px;
+  }
+
+    .header__burger-button:last-child:after {
+    width: 23px;
+  }
+}
