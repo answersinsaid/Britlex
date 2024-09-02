@@ -1,0 +1,78 @@
+.skills__header{
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 80px;
+    margin-bottom: 100px;
+
+
+
+}
+
+.skills__content{
+    display: grid;
+    grid-template-columns: repeat(3, 33.333%);
+    grid-gap: 20px;
+    grid-template-areas: 
+        "Speaking Writing Reading"
+        "Speaking Listening Listening";
+        
+
+}
+.skills-block{}
+.skills-block__item {
+    gap: 20px;
+    
+  }
+
+.skills-block__title{
+    color: rgb(38, 50, 56);
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 80px;
+    text-align: left;
+}
+.skills-block__text{
+    color: rgb(143, 149, 165);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 25px;
+}
+.skills-block__img{}
+.skills-block__button{
+    box-sizing: border-box;
+    border: 2px solid #263238;
+    border-radius: 5px;
+    background: #263238;
+    padding: 20px 60px;
+    color:#ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: color, background-color;
+    transition: 0.2s,ease-in-out;
+}
+
+.skills-block__button:hover{
+    color: #263238;
+    background-color: #ffffff;
+}
+
+._item-speaking{
+    grid-area: Speaking;
+}
+._item-writing{
+    grid-area: Writing;
+}
+._item-reading{
+    grid-area: Reading;
+}
+._item-listening{
+    grid-area: Listening;
+}
