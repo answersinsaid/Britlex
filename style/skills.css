@@ -18,7 +18,7 @@
     grid-template-areas: 
         "Speaking Writing Reading"
         "Speaking Listening Listening";
-        
+
 
 }
 .skills-block{}
@@ -34,6 +34,7 @@
     line-height: 80px;
     text-align: left;
 }
+
 .skills-block__text{
     color: rgb(143, 149, 165);
     font-size: 16px;
@@ -43,6 +44,7 @@
     margin-bottom: 25px;
 }
 .skills-block__img{}
+
 .skills-block__button{
     box-sizing: border-box;
     border: 2px solid #263238;
