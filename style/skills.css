@@ -1,3 +1,6 @@
+.skills{
+    margin-bottom: 250px;
+}
 .skills__header{
     justify-content: space-between;
     align-items: center;
@@ -6,25 +9,28 @@
     font-weight: 600;
     line-height: 80px;
     margin-bottom: 100px;
-
-
-
 }
 
 .skills__content{
     display: grid;
-    grid-template-columns: repeat(3, 33.333%);
     grid-gap: 20px;
     grid-template-areas: 
         "Speaking Writing Reading"
         "Speaking Listening Listening";
-
-
 }
-.skills-block{}
+
 .skills-block__item {
+    display: flex;
+    flex-direction: column;
     gap: 20px;
-    
+    background-color: rgb(245, 245, 245);
+    padding: 30px;
+  }
+  ._item-reading .skills-block__text {
+    margin-bottom: 40px;
+  }
+  ._item-listening .skills-block__text {
+    margin-bottom: 40px;
   }
 
 .skills-block__title{
@@ -34,7 +40,6 @@
     line-height: 80px;
     text-align: left;
 }
-
 .skills-block__text{
     color: rgb(143, 149, 165);
     font-size: 16px;
@@ -42,6 +47,10 @@
     line-height: 24px;
     text-align: left;
     margin-bottom: 25px;
+}
+._text-speaking {
+    margin-bottom: 40px;
+    max-width: 350px;
 }
 .skills-block__img{}
 
@@ -60,7 +69,6 @@
     transition: color, background-color;
     transition: 0.2s,ease-in-out;
 }
-
 .skills-block__button:hover{
     color: #263238;
     background-color: #ffffff;
@@ -77,4 +85,147 @@
 }
 ._item-listening{
     grid-area: Listening;
+    flex-direction: row-reverse;
+}
+._item-listening-img{
+}
+
+
+@media screen and (max-width: 993px) {
+    .skills__header{
+        font-size: 36px;
+        line-height: 80px;
+        margin-bottom: 50px;
+    }
+    .skills__content{
+        display: grid;
+        grid-gap: 10px;
+        align-items: start;
+    }
+    .item-skills-block-img {
+        max-width: 235px;
+    }
+    .skills-block__title{
+        font-size: 22px;
+        line-height: 80px;
+    }
+    .skills-block__text{
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .skills-block__button{
+        padding: 15px 40px;
+        font-size: 18px;
+        line-height: 27px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .skills__header{
+        font-size: 30px;
+        line-height: 80px;
+        margin-bottom: 40px;
+    }
+    .skills__content{
+        display: grid;
+        grid-gap: 10px;
+    }
+    .skills-block__img {
+        max-width: 215px;
+    }
+    .item-skills-block-img{
+        width: 100%;
+    }
+    .skills-block__title{
+        font-size: 20px;
+        line-height: 80px;
+    }
+    .skills-block__text{
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .skills-block__button{
+        padding: 15px 40px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .skills__header{
+        font-size: 30px;
+        line-height: 80px;
+        margin-bottom: 35px;
+    }
+    .skills__content{
+        display: grid;
+        grid-template-columns: repeat(4, 50%);
+        grid-gap: 30px;
+        grid-template-areas: 
+            "Speaking Writing"
+            "Reading Listening";
+        justify-items: stretch;
+        align-items: start;
+    }
+    .item-skills-block-img {
+        max-width: 185px;
+    }
+    ._item-listening{
+        flex-direction: column;
+    }
+    .skills-block__title{
+        font-size: 18px;
+        line-height: 80px;
+    }
+    .skills-block__text{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    ._item-writing-text {
+        margin-bottom: 170px;
+    }
+    ._item-listening-text {
+        padding-bottom: 17px;
+    }
+    .skills-block__button{
+        padding: 15px 55px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .skills__header{
+        font-size: 24px;
+        line-height: 80px;
+        margin-bottom: 40px;
+    }
+    .skills__content{
+        display: grid;
+        grid-template-columns: repeat(4, 100%);
+        grid-gap: 40px;
+        grid-template-areas: 
+            "Speaking" 
+            "Writing"
+            "Reading"
+            "Listening";
+    }
+    .skills-block__title{
+        font-size: 18px;
+        line-height: 80px;
+    }
+    .skills-block__text{
+        font-size: 13px;
+        line-height: 20px;
+        margin-bottom: 25px;
+    }
+    ._item-listening-text {
+        padding-bottom: 0;
+    }
+    .skills-block__button{
+        padding: 15px 45px;
+        font-size: 14px;
+        line-height: 21px;
+    }
 }

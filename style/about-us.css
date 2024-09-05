@@ -1,0 +1,44 @@
+.about-us{
+    justify-content: center;
+    
+}
+    
+.about-us__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "info-title Image"
+        "info-text  Image"
+        "item-statistics Image";
+
+}
+._item-info-title{
+    grid-area: info-title;
+}
+._item-info{
+    grid-area: Info;
+}
+._item-img{
+    grid-area: Image;
+}
+._item-info-text{
+    grid-area:info-text ;
+}
+._item-statistics {
+    grid-area: item-statistics;
+    
+}
+.content-block{}
+
+.content-block__title{}
+
+.content-block__text{
+}
+
+.content-block__statistics {}
+
+._statistics-info{}
+
+.statistics-info__title{}
+
+.statistics-info__text{}
