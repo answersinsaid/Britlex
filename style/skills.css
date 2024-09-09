@@ -18,6 +18,11 @@
         "Speaking Writing Reading"
         "Speaking Listening Listening";
 }
+.skills__item{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
 
 .skills-block__item {
     display: flex;
@@ -52,14 +57,20 @@
     margin-bottom: 40px;
     max-width: 350px;
 }
-.skills-block__img{}
+.skills-block__img {
+    max-width: 350px;
+}
+.item-skills-block-img{
+    width: 100%;
+}
 
 .skills-block__button{
+    display: flex;
     box-sizing: border-box;
     border: 2px solid #263238;
     border-radius: 5px;
     background: #263238;
-    padding: 20px 60px;
+    padding: 15px 60px;
     color:#ffffff;
     font-size: 20px;
     font-weight: 500;
@@ -68,6 +79,10 @@
     cursor: pointer;
     transition: color, background-color;
     transition: 0.2s,ease-in-out;
+    align-self: flex-start;
+}
+._button-listening{
+    padding: 15px 45px;
 }
 .skills-block__button:hover{
     color: #263238;
@@ -87,8 +102,6 @@
     grid-area: Listening;
     flex-direction: row-reverse;
 }
-._item-listening-img{
-}
 
 
 @media screen and (max-width: 993px) {
@@ -100,7 +113,6 @@
     .skills__content{
         display: grid;
         grid-gap: 10px;
-        align-items: start;
     }
     .item-skills-block-img {
         max-width: 235px;
@@ -165,8 +177,6 @@
         grid-template-areas: 
             "Speaking Writing"
             "Reading Listening";
-        justify-items: stretch;
-        align-items: start;
     }
     .item-skills-block-img {
         max-width: 185px;
@@ -182,13 +192,9 @@
         font-size: 12px;
         line-height: 18px;
     }
-    ._item-writing-text {
-        margin-bottom: 170px;
-    }
-    ._item-listening-text {
-        padding-bottom: 17px;
-    }
+ 
     .skills-block__button{
+        margin-top: auto;
         padding: 15px 55px;
         font-size: 14px;
         line-height: 21px;
@@ -219,9 +225,6 @@
         font-size: 13px;
         line-height: 20px;
         margin-bottom: 25px;
-    }
-    ._item-listening-text {
-        padding-bottom: 0;
     }
     .skills-block__button{
         padding: 15px 45px;
