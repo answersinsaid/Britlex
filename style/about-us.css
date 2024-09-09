@@ -79,7 +79,6 @@
 }
 
 .about-us__image {
-    display: flex;
     max-width: 500px;
     margin: 0 auto;
 }
