@@ -79,6 +79,7 @@
 .about-us__image {
     max-width: 500px;
     margin: 0 auto;
+    align-self: center;
 }
 
 .about-us__img {
@@ -86,7 +87,7 @@
 }
 
 @media screen and (max-width: 993px) {
-    
+
     .about-us {
         margin-bottom: 100px;
     }
@@ -193,11 +194,13 @@
     .item-statistics__text {
         font-size: 14px;
         line-height: 21px;
+        text-align: center;
     }
 
     .about-us__image {
         max-width: 350px;
         margin-bottom: 25px;
+        align-items: center;
     }
 }
 
@@ -217,6 +220,7 @@
         font-size: 13px;
         line-height: 20px;
         margin-bottom: 30px;
+        text-align: center;
     }
 
     .content-block__statistics {
