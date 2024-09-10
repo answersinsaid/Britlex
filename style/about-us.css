@@ -7,8 +7,9 @@
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-areas:
-        "Info Image"
-        "Info  Image";
+        "info-title Image"
+        "info-text  Image"
+        "item-statistics Image";
 }
 
 ._item-info-title {
@@ -32,10 +33,7 @@
 
 }
 
-.content-block {
-    display: flex;
-    flex-direction: column;
-}
+
 
 .content-block__title {
     font-size: 48px;
@@ -88,6 +86,11 @@
 }
 
 @media screen and (max-width: 993px) {
+    
+    .about-us {
+        margin-bottom: 100px;
+    }
+
     .content-block__title {
         font-size: 36px;
         line-height: 80px;
@@ -116,6 +119,11 @@
 }
 
 @media screen and (max-width: 768px) {
+
+    .about-us {
+        margin-bottom: 100px;
+    }
+
     .content-block__title {
         font-size: 30px;
         line-height: 80px;
@@ -144,6 +152,10 @@
 }
 
 @media screen and (max-width: 576px) {
+    .about-us {
+        margin-bottom: 135px;
+    }
+
     .about-us__content {
         display: grid;
         grid-template-columns: 100%;
@@ -153,19 +165,24 @@
             "info-text"
             "item-statistics";
     }
-    .content-block {
         
-    }
     .content-block__title {
         font-size: 30px;
         line-height: 80px;
-        margin-bottom: 40px;
+        margin-bottom: 25px;
+        text-align: center;
     }
 
     .content-block__text {
         font-size: 14px;
         line-height: 21px;
         margin-bottom: 30px;
+    }
+    .content-block__statistics {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
     }
 
     .item-statistics__title {
@@ -180,10 +197,16 @@
 
     .about-us__image {
         max-width: 350px;
+        margin-bottom: 25px;
     }
 }
 
 @media screen and (max-width: 321px) {
+
+    .about-us {
+        margin-bottom: 85px;
+    }
+
     .content-block__title {
         font-size: 24px;
         line-height: 80px;
@@ -194,6 +217,13 @@
         font-size: 13px;
         line-height: 20px;
         margin-bottom: 30px;
+    }
+
+    .content-block__statistics {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
     }
 
     .item-statistics__title {
