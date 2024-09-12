@@ -14,23 +14,28 @@
 
 .pricing__container {
     display: flex;
-    justify-content: space-between;
+    gap: 80px;
+    justify-content: center;
+    align-items:center;
 }
 
 .pricing-item__content {
     display: flex;
     flex-direction: column;
-    max-width: 300px;
     align-self: flex-end;
-
+    
 }
 
 .pricing-item__image {
     margin-bottom: 40px;
+    
+    
 }
 
 .pricing-item__img {
-
+    width: 250px;
+    height: 230px;
+ 
 }
 
 .pricing-item__title {
@@ -39,16 +44,17 @@
     font-weight: 600;
     line-height: 34px;
     text-align: left;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .pricing-item__text {
     color: rgb(143, 149, 165);
-    font-size: 16px;
+    font-size: 20x;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 30px;
     text-align: left;
     margin-bottom: 35px;
+    
 
 }
 
